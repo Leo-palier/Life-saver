@@ -1,13 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="mx-auto">
+    <div class="title">
+      <h1>LIFE SAVER</h1>
+    </div>
+    <!-- Navbar links -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav link">
+        <%= link_to "Acceuil", root_path, class: "navbar-brand nav-item"%>
+        <%= link_to "Mes infos", infos_path, class: "navbar-brand nav-item"%>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-    <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
@@ -27,9 +36,11 @@
         </li>
       <% else %>
         <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
+<%= link_to "Login", new_user_session_path, class: "nav-link" %>
+</li>
       <% end %>
     </ul>
   </div>
 </div>
+-->
+<%= link_to "Login", new_user_session_path, class: "nav-link" %>
